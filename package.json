@@ -1,5 +1,12 @@
 {
   "name": "alta-user-management-mini-api",
+  "description": "Alta User Management Mini API",
+  "authors": [
+    {
+      "name": "Johan Alexander Farfán",
+      "email": "johanfarfan25@gmail.com"
+    }
+  ],
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -17,7 +24,6 @@
     "url": "https://github.com/JohanFarfan25/alta-user-management-mini-api/issues"
   },
   "homepage": "https://github.com/JohanFarfan25/alta-user-management-mini-api#readme",
-  "description": "",
   "dependencies": {
     "body-parser": "^2.2.0",
     "dotenv": "^16.5.0",
@@ -26,5 +32,6 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "type": "module"
 }
