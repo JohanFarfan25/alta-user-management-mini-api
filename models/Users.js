@@ -33,6 +33,7 @@ class User extends BaseModel {
     }
 
     async create(data) {
+        data.uuid = this.generateUUID();
         return this.save(data);
     }
 
