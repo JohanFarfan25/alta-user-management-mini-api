@@ -30,7 +30,7 @@ class User extends BaseModel {
     }
 
     async findById(id) {
-        return this.findFirst({ id });
+        return this.findFirst({id: id, status: 1});
     }
 
     async create(data) {
@@ -44,8 +44,8 @@ class User extends BaseModel {
         return this.update(id, data);
     }
 
-    async delete(id) {
-        return this.softDelete(id);
+    async delete(user) {
+        return this.softDelete(user.id, user);
     }
 
     generateUUID() {

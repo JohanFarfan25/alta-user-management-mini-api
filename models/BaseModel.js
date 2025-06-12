@@ -76,11 +76,13 @@ class BaseModel {
      * 
      * @author Johan Alexander Farfán Sierra <johanfarfan25@gmail.com>
      * @param {number} id - ID del registro a eliminar.
+     * @param {Object} model - Modelo del registro a eliminar.
      * @returns {Promise<void>} - No retorna nada, pero actualiza el estado del registro a 0.
      * 
      */
-    async softDelete(id) {
-        this.update(id, 'status = 0');// Soft delete by setting status to 0
+    async softDelete(id, model) {
+        model.status = 0; // Soft delete by setting status to 0
+        this.update(id, model);// Soft delete by setting status to 0
     }
 
 }
