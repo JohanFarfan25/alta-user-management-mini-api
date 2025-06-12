@@ -1,5 +1,6 @@
 
 import BaseModel from './BaseModel.js';
+import dayjs from 'dayjs';
 
 class User extends BaseModel {
 
@@ -34,10 +35,12 @@ class User extends BaseModel {
 
     async create(data) {
         data.uuid = this.generateUUID();
+        data.created_at = dayjs().format('YYYY-MM-DD HH:mm:ss');
         return this.save(data);
     }
 
     async modify(id, data) {
+        data.updated_at = dayjs().format('YYYY-MM-DD HH:mm:ss');
         return this.update(id, data);
     }
 

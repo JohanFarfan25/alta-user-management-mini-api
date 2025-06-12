@@ -7,5 +7,7 @@ const usersController = new UsersController();
 
 // CRUD Routes
 router.post('/users', usersController.addAction); // Creacion de usuario
+router.get('/users', usersController.getAllAction); // Obtener todos los usuarios
+router.get('/users/:id', usersController.getByIdAction); // Obtener usuario por ID
 
 export default router;

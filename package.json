@@ -26,6 +26,7 @@
   "homepage": "https://github.com/JohanFarfan25/alta-user-management-mini-api#readme",
   "dependencies": {
     "body-parser": "^2.2.0",
+    "dayjs": "^1.11.13",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mysql2": "^3.14.1"
