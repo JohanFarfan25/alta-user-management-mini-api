@@ -54,6 +54,7 @@ class BaseModel {
      * 
      */
     async save(data) {
+        data.uuid = this.generateUUID();
         const [result] = await this.db.query(`INSERT INTO ${this.tableName} SET ?`, [data]);
         return result;
     }

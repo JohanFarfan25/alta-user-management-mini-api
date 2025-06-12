@@ -34,7 +34,6 @@ class User extends BaseModel {
     }
 
     async create(data) {
-        data.uuid = this.generateUUID();
         data.created_at = dayjs().format('YYYY-MM-DD HH:mm:ss');
         return this.save(data);
     }

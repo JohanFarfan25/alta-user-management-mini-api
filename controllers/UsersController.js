@@ -25,7 +25,7 @@ class UsersController {
             const user = await (new Users).create(req.body);
             res.status(201).json({ message: 'Usuario creado exitosamente', user });
         } catch (error) {
-            res.status(500).json({ message: error.message, error });
+            res.status(400).json({ message: error.message, error });
         }
     }
 
@@ -43,7 +43,7 @@ class UsersController {
             const users = await (new Users).findAll({ status: 1 });
             res.status(200).json(users);
         } catch (error) {
-            res.status(500).json({ message: error.message, error });
+            res.status(400).json({ message: error.message, error });
         }
     }
 
@@ -72,7 +72,7 @@ class UsersController {
 
             res.status(200).json(user);
         } catch (error) {
-            res.status(500).json({ message: error.message, error });
+            res.status(400).json({ message: error.message, error });
         }
     }
 
@@ -105,7 +105,7 @@ class UsersController {
             const updatedUser = await (new Users).modify(userId, req.body);
             res.status(200).json({ message: 'Usuario actualizado exitosamente', updatedUser });
         } catch (error) {
-            res.status(500).json({ message: error.message, error });
+            res.status(400).json({ message: error.message, error });
         }
     }
 
@@ -136,7 +136,7 @@ class UsersController {
             await (new Users).delete(user);
             res.status(200).json({ message: 'Usuario eliminado exitosamente' });
         } catch (error) {
-            res.status(500).json({ message: error.message, error });
+            res.status(400).json({ message: error.message, error });
         }
     }
 }

@@ -4,6 +4,7 @@ import express from 'express';
 import userRoutes from './routes/UserRoutes.js';
 import db from './config/db.js';
 
+//Validación conexión a la base de datos
 db.connect(error => {
     if (error) {
         console.error('Error al conectar:', error);
