@@ -169,3 +169,16 @@ curl --location --request DELETE 'http://localhost:3000/api/users/4'
 🐙 [GitHub](https://github.com/JohanFarfan25)  
 
 💼 [LinkedIn](https://linkedin.com/in/tu-perfil) 
+
+
+## 📂 Estructura
+
+```
+.
+├── config
+├── controllers
+├── models
+├── routes
+└── UseCases
+    └── Users
+```
