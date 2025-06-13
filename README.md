@@ -20,7 +20,7 @@ API RESTful para gestión de usuarios con operaciones CRUD (Create, Read, Update
 
 | Componente  | Windows                                                                 | Linux/macOS                                                                                     |
 |-------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| **Node.js** | [Descargar instalador](https://nodejs.org/en) (LTS v23.8.0+)                | `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`<br>`sudo apt install -y nodejs` |
+| **Node.js** | [Descargar instalador](https://nodejs.org/en) (LTS v23.8.0+)                | `curl -fsSL https://deb.nodesource.com/setup_23.8.0.x | sudo -E bash -`<br>`sudo apt install -y nodejs` |
 | **MySQL**   | [Descargar instalador](https://dev.mysql.com/downloads/mysql/) (v8.0+)  | `sudo apt update && sudo apt install mysql-server`<br>`sudo mysql_secure_installation`          |
 | **Git**     | [Descargar instalador](https://git-scm.com/) (Opcional)                 | `sudo apt install git`                                                                          |
 
